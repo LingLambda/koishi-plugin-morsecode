@@ -1,22 +1,27 @@
 {
   "name": "koishi-plugin-morsecode",
-  "description": "",
-  "version": "0.0.1",
+  "description": "转换摩斯密码为文本或转换文本为摩斯密码,用这个和群友表白吧!!!",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intling-luo/koishi-plugin-hellomorning.git"
+  },
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "password",
+    "morse",
+    "morsecode"
   ],
-  "devDependencies": {},
   "peerDependencies": {
-    "koishi": "^4.17.11"
+    "koishi": "^4.0.0"
   }
 }
