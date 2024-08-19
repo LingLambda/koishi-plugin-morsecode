@@ -35,12 +35,12 @@ const morseCodeDict :Dict = {
 
 export function apply(ctx: Context) {
 
-  ctx.command('morse <message:text> 输入摩斯密码或英文文本,即将支持中文')
-  .usage('注意：输入摩斯密码时请使用-或_和.')
+  ctx.command('morse <message:text> ','摩斯密码加密/解密')
+  .usage('暂仅支持英文,即将支持中文')
   .option('toMorse', '-m  输入字转摩斯密码')//指定字转莫斯
   .option('toText', '-t 输入摩斯密码转字,用 / 分割')//指定莫斯转字
   .action(({options},massage) => convert(options,massage))
-  .example('morse I LOVE U  将I LOVE U转为莫斯密码')
+  .example('morse I LOVE U 或 morse ../ /.-../---/...-/./ /..-')
 
 }
 
