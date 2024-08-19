@@ -46,11 +46,11 @@ export function apply(ctx: Context) {
 
 function convert(options: any, massage: string) {
   ////console.log("输入: 参数1:"+options.toMorse+" 参数2:"+options.toText+" "+" 文本:"+massage)
-  if ( massage==undefined || !massage)
+  if (!massage)
     return "未检测到有效输入"
-  if (options.toMorse!=null)
+  if (options.toMorse)
     return textToMorse(massage)
-  else if (options.toText!=null)
+  else if (options.toText)
     return morseToText(massage)
 
   if (massage.charAt(0) == "-" || massage.charAt(0) == "_" || massage.charAt(0) == ".") {
@@ -91,6 +91,7 @@ function textToMorse(massage:string){
   let decodedMessage : Array<string> = [];
   //分割输入字符串为一个个字符的数组
   let charArray:string[] = massage.split("")
+  
   charArray.forEach(char => {
     decodedMessage.push(morseCodeDict[char.toUpperCase()])
   });

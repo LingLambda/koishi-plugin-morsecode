@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-morsecode",
   "description": "转换摩斯密码为文本或转换文本为摩斯密码,用这个和群友表白吧!!!",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -19,7 +19,10 @@
     "plugin",
     "password",
     "morse",
-    "morsecode"
+    "莫斯",
+    "摩斯",
+    "莫尔斯",
+    "密码"
   ],
   "peerDependencies": {
     "koishi": "^4.0.0"
