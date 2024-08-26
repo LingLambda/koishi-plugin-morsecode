@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-morsecode",
   "description": "转换摩斯密码为文本或转换文本为摩斯密码,用这个和群友表白吧!!!",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intling-luo/koishi-plugin-morsecode.git"
+    "url": "git+https://github.com/LingLambda/koishi-plugin-morsecode.git"
   },
   "license": "MIT",
   "keywords": [
